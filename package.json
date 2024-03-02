@@ -2,10 +2,14 @@
   "name": "utube",
   "version": "1.0.0",
   "description": "node js project having functionalities related to youtube",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Siddharth",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
