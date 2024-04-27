@@ -19,3 +19,14 @@ export const uploadOnCloudinary = async (localFilePath) => {
     fs.unlinkSync(localFilePath); // Delete the file synchronously
   }
 };
+
+export const deleteFileOnCloudinary = async (path) => {
+  try {
+    if (!path) return null;
+    const response = await cloudinary.uploader.destroy(path);
+
+    return response;
+  } catch (err) {
+    console.error(err);
+  }
+};
